@@ -14,7 +14,7 @@ body {
     
     
     
-    .headline1 {
+    h1 {
         font-size: 64px;
         display: flex;
         justify-content: start;
@@ -24,10 +24,11 @@ body {
         font-weight: bold;
     }
     
-    .headline2 {
+    h2 {
         font-size: 48px;
         margin: 0;
-        margin-bottom: 24px;
+        margin: 12px 0;
+        font-weight:normal;
     }
     
     h3 {
@@ -53,14 +54,14 @@ body {
       }
       
       .carousel-button {
-        padding: 8px 12px;
+        padding: 12px 16px;
         margin: 24px 0px;
         margin-right: 16px;
         font-weight: normal;
         border: 1px solid #807E7C;
-        font-size: 16px;
+        font-size: 24px;
         font-weight: lighter;
-        border-radius: 120px;
+        border-radius: 24px;
     
       }
       
@@ -81,6 +82,7 @@ body {
         padding: 20px;
         display: flex;
         align-items: flex-end;
+        border-radius: 24px;
       }
     
       #carousel-content {
@@ -128,4 +130,8 @@ body {
         margin: 0;
         font-size: 32px;
         font-weight: bold;
+      }
+
+      #lol {
+        margin-top: 48px;
       }
