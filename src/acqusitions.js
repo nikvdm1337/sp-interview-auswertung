@@ -75,7 +75,7 @@ import Chart from 'chart.js/auto'
                     label: 'Intensität der Mediennutzung',
                     data: data2.map(row => row.count),
                     fill: false,
-                    borderColor: 'rgb(75, 192, 192)',
+                    borderColor: '#E64415',
                     tension: 0
                 }]
             }
@@ -112,7 +112,7 @@ import Chart from 'chart.js/auto'
                     label: 'Intensität der Mediennutzung',
                     data: data3.map(row => row.count),
                     fill: false,
-                    borderColor: 'rgb(75, 192, 192)',
+                    borderColor: '#E64415',
                     tension: 0
                 }]
             }
