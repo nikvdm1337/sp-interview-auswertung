@@ -36,6 +36,7 @@
     <meta property="og:image" content="https://www.spiegel.de/public/spon/images/logos/fb_logo_default.jpg">
     <meta property="og:description"
         content="Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.">
+    <link rel="stylesheet" href="./styles.css">
 
     <link rel="preconnect" href="https://cdn.prod.www.spiegel.de">
     <link rel="dns-prefetch" href="https://cdn.prod.www.spiegel.de">
@@ -95,8 +96,7 @@
         href="https://www.spiegel.de/politik/index.rss">
     <link rel="alternate" type="application/rss+xml" title="DER SPIEGEL RSS Politik - Deutschland"
         href="https://www.spiegel.de/politik/deutschland/index.rss">
-    <link rel="stylesheet"
-        href="https://cdn.prod.www.spiegel.de/public/spon/generated/css/styles.75af1963f37f74e6f86b.css">
+  
 
     <script src="https://cdn.prod.www.spiegel.de/public/shared/generated/js/commons.89c5225406a6d94f4b6b.js"></script>
     <script src="https://cdn.prod.www.spiegel.de/public/shared/generated/js/header.a51ca23e78ddd4f78db7.js"></script>
@@ -118,113 +118,331 @@
 </head>
 
 <body>
-    <header role="banner" class="sticky top-0 -mt-8 z-30 pointer-events-none" data-stickyfill="">
-        <div data-app-hidden="">
-            <div class="relative z-max" data-area="header-bar">
-                <div class="bg-primary-base dark:bg-dm-primary-base top-0 w-full z-10 pointer-events-auto transition-transform duration-300 ease-out origin-left-center"
-                    id="header-bar"
-                    x-data="{isInTopArea: true,isInOverlay: false,get isCollapsed() {return !this.isInTopArea &amp;&amp; !this.isInOverlay;},}"
-                    x-subscribe.toparea_enter="isInTopArea = true" x-subscribe.toparea_leave="isInTopArea = false"
-                    x-subscribe.overlay_handler_active_overlay_changed="isInOverlay = !!$payload[0] &amp;&amp; $payload[0].expandHeader"
-                    x-effect="document.documentElement.classList.toggle('is-headerbar-collapsed', isCollapsed)"
-                    :class="{'lg:shadow': isCollapsed,'lg:-translate-y-32': isCollapsed,'md:shadow': isCollapsed,'md:-translate-y-32': isCollapsed,}">
-                    <div
-                        class="OffsetContainer bg-primary-base dark:bg-dm-primary-base md:overflow-hidden lg:overflow-hidden">
-                        <div class="mx-auto flex items-center transition-transform duration-300 ease-out origin-left-center lg:px-32 lg:py-20 lg:h-80 lg:max-w-lg md:px-24 md:py-20 md:h-80 sm:pb-12 sm:pl-16 sm:pr-12 sm:pt-12 sm:h-48"
-                            :class="{'lg:translate-y-16': isCollapsed,'md:translate-y-16': isCollapsed,}">
-                            <span
-                                class="flex flex-auto justify-start items-center md:order-1 lg:order-1 overflow-hidden text-white transition-transform duration-300 ease-out origin-left-center"
-                                :class="{'lg:translate-x-40': isCollapsed,'lg:scale-70': isCollapsed,'md:translate-x-40': isCollapsed,'md:scale-70': isCollapsed,}">
-                                <span class="shrink-0">
-                                    <a href="https://www.spiegel.de/" target="_self" title="DER SPIEGEL"
-                                        aria-label="DER SPIEGEL">
-                                        <span class="hidden">DER SPIEGEL</span>
-                                        <span class="block lg:hidden md:hidden leading-none"><svg
-                                                id="spon-spiegel-mobile" width="74" height="15" viewBox="0 0 74 15"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-                                                aria-hidden="true">
-                                                <g id="spiegel-mobile-d566c666-ba39-4bab-b05f-bc23580f8f37"
-                                                    clip-path="url(#clip0-d566c666-ba39-4bab-b05f-bc23580f8f37)">
-                                                    <g
-                                                        id="der-spiegel-tablet-desktop-d566c666-ba39-4bab-b05f-bc23580f8f37">
-                                                        <g id="logo-d566c666-ba39-4bab-b05f-bc23580f8f37" fill="#fff">
-                                                            <path
-                                                                d="M-36.635 12.5v-10h3.212v10h-3.212zm6.123.9V1.6c0-.9-.803-1.6-1.606-1.6h-8.632v2.5h1.205v10h-1.205V15h8.733c.803 0 1.505-.7 1.505-1.6zM-21.478 9.7v2.8h-3.413V8.4h4.517V5.9h-4.517V2.5h3.413v2.1h2.81V0h-10.238v2.5h1.104v10h-1.104V15h10.238V9.7h-2.81zM-13.047 5.9V2.5h3.313v3.4h-3.313zm6.324 6.6V8.9c0-.9-.703-1.6-1.606-1.6.903 0 1.606-.7 1.606-1.6v-4c0-.8-.703-1.6-1.506-1.6h-8.933v2.5h1.305v10h-1.305V15h5.32v-2.5h-1.104V8.4h3.312v4.1h-1.205V15h5.22v-2.5h-1.104zM14.656 5.9V2.5h3.413v3.4h-3.413zm6.324.9V1.6c0-.9-.703-1.6-1.606-1.6H10.54v2.5h1.204v10h-1.204V15h5.22v-2.5h-1.105V8.4h4.718c.903 0 1.606-.7 1.606-1.6zM26.099 12.5v-10h1.204V0h-5.22v2.5h1.205v10h-1.204V15h5.22v-2.5h-1.205zM36.036 9.7v2.8h-3.413V8.4h4.517V5.9h-4.517V2.5h3.413v2.1h2.91V0H28.608v2.5h1.104v10h-1.104V15h10.338V9.7h-2.91zM44.266 5.9v2.5h2.309v4.1h-3.413v-10h3.413v2.1h3.011v-3c0-.9-.703-1.6-1.606-1.6h-6.022c-.402 0-.803.2-1.004.4-.301.3-.602.7-.602 1.2v11.8c0 .5.2.9.602 1.2.301.3.703.4 1.104.4h7.528V5.9h-5.32zM58.419 9.7v2.8h-3.413V8.4h4.517V5.9h-4.517V2.5h3.413v2.1h2.91V0H50.992v2.5h1.104v10h-1.104V15H61.33V9.7h-2.911zM70.163 9.7v2.8H66.85v-10h1.204V0h-5.32v2.5h1.205v10h-1.205V15h10.339V9.7h-2.911zM9.236 13.49V5.94H3.013V2.517h3.312V4.63h3.011V1.61C9.336.644 8.433 0 7.53 0H1.608C.704 0 .002.705.002 1.61v6.846h6.223v4.128H2.913V9.765H.002v3.624C.002 14.295.704 15 1.608 15H7.53c.923 0 1.706-.604 1.706-1.51z">
-                                                            </path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0-d566c666-ba39-4bab-b05f-bc23580f8f37">
-                                                        <path fill="#fff" d="M0 0h74v15H0z"></path>
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </span>
-                                        <span class="block leading-none sm:hidden"><svg id="spon-spiegel-tablet-desktop"
-                                                width="113" height="23" viewBox="0 0 113 23" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-                                                <path
-                                                    d="M22.956 9.047V3.833h5.233v5.214h-5.233zm9.696 1.38V2.453C32.652 1.073 31.575 0 30.19 0H16.646v3.833h1.847v15.334h-1.847V23h8.003v-3.833h-1.693V12.88h7.234c1.385 0 2.462-1.073 2.462-2.453zM40.501 19.167V3.833h1.847V0h-8.003v3.833h1.847v15.334h-1.847V23h8.003v-3.833h-1.847zM55.738 14.873v4.294h-5.233V12.88h6.926V9.047h-6.926V3.833h5.233v3.22h4.463V0H44.35v3.833h1.693v15.334h-1.693V23h15.852v-8.127h-4.463zM68.358 9.047v3.833h3.54v6.287h-5.233V3.833h5.233v3.22h4.617v-4.6c0-1.38-1.077-2.453-2.462-2.453h-9.234c-.616 0-1.232.307-1.54.613-.461.46-.923 1.074-.923 1.84v18.094c0 .766.308 1.38.923 1.84.462.46 1.078.613 1.693.613h11.543V9.047h-8.157zM90.059 14.873v4.294h-5.233V12.88h6.926V9.047h-6.926V3.833h5.233v3.22h4.463V0H78.67v3.833h1.693v15.334H78.67V23h15.852v-8.127h-4.463zM108.066 14.873v4.294h-5.078V3.833h1.846V0h-8.157v3.833h1.847v15.334h-1.847V23h15.853v-8.127h-4.464zM14.645 20.685V9.107H5.103V3.86h5.079v3.242h4.617V2.47C14.8.988 13.414 0 12.03 0h-9.08C1.562 0 .485 1.08.485 2.47v10.496h9.542v6.33H4.95v-4.323H.486v5.557c0 1.39 1.077 2.47 2.462 2.47h9.08c1.417 0 2.617-.926 2.617-2.315z"
-                                                    fill="#fff"></path>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </span>
-                                <a href="https://www.spiegel.de/politik/" target="_self" title="Politik"
-                                    class="relative mr-auto ml-4 mt-2 text-white overflow-hidden pr-16 font-sans text-3xl ml-6 sm:overflow-x-auto sm:text-l sm:leading-normal sm:ml-4 tracking-wide whitespace-nowrap">Nutzer*innen
-                                    Interviews auf Discord
-                                </a>
-                                <div class="relative lg:h-56 md:h-56 sm:h-40 focus:outline-none">
-                                    <div class="z-10 absolute right-0 bottom-0 lg:h-56 md:h-56 sm:h-40">
-                                        <div class="flex items-center">
-                                            <span
-                                                class="bg-gradient-to-l from-primary-base dark:from-dm-primary-base w-24 lg:h-56 md:h-56 sm:h-40"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </span>
-                            <div class="flex items-center justify-end flex-auto md:order-2 lg:order-2 ml-6 transition-fade duration-300 ease-out"
-                                :class="{'lg:invisible': isCollapsed,'lg:opacity-none': isCollapsed,'md:invisible': isCollapsed,'md:opacity-none': isCollapsed,}">
+  
 
+    <div class="OffsetContainer contentwrapper">
+        <div class="headline1">SPIEGEL Auswertung Mediennutzung</div>
+        <div class="headline2">Nutzung von Medien über den Tagsverlauf</div>
+        <div class="carousel">
 
+            <div class="carousel-buttons">
+                <button class="carousel-button active" onclick="changeContent(0)">Persona 1</button>
+                <button class="carousel-button" onclick="changeContent(1)">Persona 2</button>
+                <button class="carousel-button" onclick="changeContent(2)">Persona 3</button>
 
-                            </div>
-                            <button
-                                class="text-white dark:text-shade-lightest leading-none outline-focus transition-fade duration-300 ease-out lg:absolute lg:h-full lg:top-0 lg:invisible lg:opacity-none lg:-ml-4 md:absolute md:h-full md:top-0 md:invisible md:opacity-none md:-ml-4"
-                                @click="$publish('OPEN_MENU_DRAWER')" data-sara-click-el="button"
-                                :class="{'lg:opacity-none': !isCollapsed,'lg:invisible': !isCollapsed,'md:opacity-none': !isCollapsed,'md:invisible': !isCollapsed,}">
-                                <span class="sr-only">Menü öffnen</span><svg id="spon-menu-l" class="stroke-current"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-                                    <g id="l-menu-acd58162-c9c7-44c6-aaed-945359a5c169" stroke-width="1.3"
-                                        stroke-linecap="round">
-                                        <path id="line-acd58162-c9c7-44c6-aaed-945359a5c169" d="M19.35 6.65H4.65">
-                                        </path>
-                                        <path id="line_2-acd58162-c9c7-44c6-aaed-945359a5c169" d="M19.35 11.65H4.65">
-                                        </path>
-                                        <path id="line_3-acd58162-c9c7-44c6-aaed-945359a5c169" d="M19.35 16.65H4.65">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </button>
-                        </div>
+            </div>
+
+            <div id="carousel-content">
+                <div class="carousel-item active">
+                    <div class="left-side">
+                        <svg class="bild" width="160" height="160" viewBox="0 0 160 160" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5898_128810)">
+                                <mask id="mask0_5898_128810" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                    x="0" y="0" width="160" height="160">
+                                    <path d="M160 0H0V160H160V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_5898_128810)">
+                                    <path
+                                        d="M80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160Z"
+                                        fill="#E64415" />
+                                    <path
+                                        d="M91.5871 55.7778C97.7112 55.7778 102.676 50.8132 102.676 44.6891C102.676 38.565 97.7112 33.6005 91.5871 33.6005C85.463 33.6005 80.4985 38.565 80.4985 44.6891C80.4985 50.8132 85.463 55.7778 91.5871 55.7778Z"
+                                        fill="black" />
+                                    <path
+                                        d="M71.003 40.6456C83.3782 40.5844 93.9154 49.59 95.8146 61.7814L98.0201 75.9945H101.88C105.984 75.9332 109.476 78.8739 110.211 82.856L110.518 84.5101C111.437 89.6562 107.577 94.3735 102.37 94.4347H102.186L92.9352 94.496L94.038 100.561C96.1822 112.017 87.4215 122.555 75.7815 122.677C66.347 122.738 58.1377 116.061 56.3611 106.81L47.0491 57.6155L62.3649 40.7069L71.003 40.6456Z"
+                                        fill="#FFBAA6" />
+                                    <path
+                                        d="M76.9456 97.6204L96.3048 92.6581L103.044 128.926C104.33 135.542 98.5715 141.424 91.8938 140.26C87.9117 139.586 84.7873 136.523 83.9909 132.54L76.9456 97.6204Z"
+                                        fill="#FFBAA6" />
+                                    <path
+                                        d="M63.5289 51.3669C69.653 51.3669 74.6175 46.4023 74.6175 40.2782C74.6175 34.1541 69.653 29.1896 63.5289 29.1896C57.4048 29.1896 52.4403 34.1541 52.4403 40.2782C52.4403 46.4023 57.4048 51.3669 63.5289 51.3669Z"
+                                        fill="black" />
+                                    <path
+                                        d="M110.947 56.2678L116.093 84.0813C117.563 92.0455 111.498 99.3971 103.411 99.4584H89.5657L86.5638 73.3603L89.4432 47.4459H100.225C105.494 47.3847 110.028 51.1217 110.947 56.2678Z"
+                                        fill="black" />
+                                    <path
+                                        d="M113.03 84.5101C119.154 84.5101 124.118 79.5456 124.118 73.4215C124.118 67.2974 119.154 62.3328 113.03 62.3328C106.905 62.3328 101.941 67.2974 101.941 73.4215C101.941 79.5456 106.905 84.5101 113.03 84.5101Z"
+                                        fill="black" />
+                                    <path
+                                        d="M114.194 65.2122C120.318 65.2122 125.282 60.2477 125.282 54.1236C125.282 47.9995 120.318 43.035 114.194 43.035C108.07 43.035 103.105 47.9995 103.105 54.1236C103.105 60.2477 108.07 65.2122 114.194 65.2122Z"
+                                        fill="black" />
+                                    <path
+                                        d="M102.247 48.7936C108.371 48.7936 113.336 43.829 113.336 37.7049C113.336 31.5809 108.371 26.6163 102.247 26.6163C96.1232 26.6163 91.1587 31.5809 91.1587 37.7049C91.1587 43.829 96.1232 48.7936 102.247 48.7936Z"
+                                        fill="black" />
+                                    <path
+                                        d="M83.7457 42.1773C89.8698 42.1773 94.8343 37.2127 94.8343 31.0886C94.8343 24.9645 89.8698 20 83.7457 20C77.6216 20 72.6571 24.9645 72.6571 31.0886C72.6571 37.2127 77.6216 42.1773 83.7457 42.1773Z"
+                                        fill="black" />
+                                    <path
+                                        d="M64.3251 42.1773C70.4492 42.1773 75.4138 37.2127 75.4138 31.0886C75.4138 24.9645 70.4492 20 64.3251 20C58.201 20 53.2365 24.9645 53.2365 31.0886C53.2365 37.2127 58.201 42.1773 64.3251 42.1773Z"
+                                        fill="black" />
+                                    <path
+                                        d="M47.1105 47.4459C53.2345 47.4459 58.1992 42.4813 58.1992 36.3573C58.1992 30.2332 53.2345 25.2686 47.1105 25.2686C40.9864 25.2686 36.0219 30.2332 36.0219 36.3573C36.0219 42.4813 40.9864 47.4459 47.1105 47.4459Z"
+                                        fill="black" />
+                                    <path
+                                        d="M92.3839 101.97C89.382 108.525 86.8089 110.792 81.1115 118.45L82.7042 126.292C90.3008 123.535 94.5893 117.408 92.3839 101.97Z"
+                                        fill="black" />
+                                    <path
+                                        d="M97.1011 75.9333C90.9748 75.9333 86.0125 70.971 86.0125 64.8447C86.0125 58.7183 90.9748 53.756 97.1011 53.756H102.982V75.872H97.1011V75.9333Z"
+                                        fill="black" />
+                                    <path
+                                        d="M45.0886 62.149C51.2127 62.149 56.1773 57.1845 56.1773 51.0604C56.1773 44.9363 51.2127 39.9717 45.0886 39.9717C38.9646 39.9717 34 44.9363 34 51.0604C34 57.1845 38.9646 62.149 45.0886 62.149Z"
+                                        fill="black" />
+                                    <path
+                                        d="M63.529 62.7617C69.6531 62.7617 74.6176 57.7972 74.6176 51.673C74.6176 45.5489 69.6531 40.5844 63.529 40.5844C57.4049 40.5844 52.4403 45.5489 52.4403 51.673C52.4403 57.7972 57.4049 62.7617 63.529 62.7617Z"
+                                        fill="black" />
+                                    <path
+                                        d="M81.6015 65.2122C87.7256 65.2122 92.6901 60.2477 92.6901 54.1236C92.6901 47.9995 87.7256 43.035 81.6015 43.035C75.4774 43.035 70.5129 47.9995 70.5129 54.1236C70.5129 60.2477 75.4774 65.2122 81.6015 65.2122Z"
+                                        fill="black" />
+                                    <path
+                                        d="M77.2518 49.2838C83.3759 49.2838 88.3405 44.3193 88.3405 38.1952C88.3405 32.0711 83.3759 27.1066 77.2518 27.1066C71.1278 27.1066 66.1632 32.0711 66.1632 38.1952C66.1632 44.3193 71.1278 49.2838 77.2518 49.2838Z"
+                                        fill="black" />
+                                    <path
+                                        d="M96.4883 57.6768C102.612 57.6768 107.577 52.7123 107.577 46.5882C107.577 40.4641 102.612 35.4995 96.4883 35.4995C90.3642 35.4995 85.3997 40.4641 85.3997 46.5882C85.3997 52.7123 90.3642 57.6768 96.4883 57.6768Z"
+                                        fill="black" />
+                                    <path
+                                        d="M68.8587 100.377C78.8446 100.377 86.3187 91.3103 84.4808 81.5082L80.0699 58.1669H86.3187L94.1604 100.5C96.3046 111.956 87.544 122.493 75.904 122.616C66.4694 122.677 58.2602 115.999 56.4835 106.749L55.2583 100.377H68.8587Z"
+                                        fill="black" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5898_128810">
+                                    <rect width="160" height="160" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <label for="">Name</label>
+
+                        <div class="nameheadline"> Chris Longjohn Silver</div>
+                        <label for="">Informations</label>
+                        <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum.</h3>
                     </div>
-                    <div class="absolute inset-x-0" data-notification-el="container"
-                        data-notification-position="default"></div>
+                    <div class="right-side">
+
+                        <div class="chart-container" style="width: 600px;">
+                            <canvas id="interview1"></canvas>
+                        </div>
+
+                        
+                    </div>
                 </div>
+                <div class="carousel-item">
+                    <div class="left-side">
+                        <svg class="bild" width="160" height="160" viewBox="0 0 160 160" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5898_128810)">
+                                <mask id="mask0_5898_128810" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                    x="0" y="0" width="160" height="160">
+                                    <path d="M160 0H0V160H160V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_5898_128810)">
+                                    <path
+                                        d="M80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160Z"
+                                        fill="#E64415" />
+                                    <path
+                                        d="M91.5871 55.7778C97.7112 55.7778 102.676 50.8132 102.676 44.6891C102.676 38.565 97.7112 33.6005 91.5871 33.6005C85.463 33.6005 80.4985 38.565 80.4985 44.6891C80.4985 50.8132 85.463 55.7778 91.5871 55.7778Z"
+                                        fill="black" />
+                                    <path
+                                        d="M71.003 40.6456C83.3782 40.5844 93.9154 49.59 95.8146 61.7814L98.0201 75.9945H101.88C105.984 75.9332 109.476 78.8739 110.211 82.856L110.518 84.5101C111.437 89.6562 107.577 94.3735 102.37 94.4347H102.186L92.9352 94.496L94.038 100.561C96.1822 112.017 87.4215 122.555 75.7815 122.677C66.347 122.738 58.1377 116.061 56.3611 106.81L47.0491 57.6155L62.3649 40.7069L71.003 40.6456Z"
+                                        fill="#FFBAA6" />
+                                    <path
+                                        d="M76.9456 97.6204L96.3048 92.6581L103.044 128.926C104.33 135.542 98.5715 141.424 91.8938 140.26C87.9117 139.586 84.7873 136.523 83.9909 132.54L76.9456 97.6204Z"
+                                        fill="#FFBAA6" />
+                                    <path
+                                        d="M63.5289 51.3669C69.653 51.3669 74.6175 46.4023 74.6175 40.2782C74.6175 34.1541 69.653 29.1896 63.5289 29.1896C57.4048 29.1896 52.4403 34.1541 52.4403 40.2782C52.4403 46.4023 57.4048 51.3669 63.5289 51.3669Z"
+                                        fill="black" />
+                                    <path
+                                        d="M110.947 56.2678L116.093 84.0813C117.563 92.0455 111.498 99.3971 103.411 99.4584H89.5657L86.5638 73.3603L89.4432 47.4459H100.225C105.494 47.3847 110.028 51.1217 110.947 56.2678Z"
+                                        fill="black" />
+                                    <path
+                                        d="M113.03 84.5101C119.154 84.5101 124.118 79.5456 124.118 73.4215C124.118 67.2974 119.154 62.3328 113.03 62.3328C106.905 62.3328 101.941 67.2974 101.941 73.4215C101.941 79.5456 106.905 84.5101 113.03 84.5101Z"
+                                        fill="black" />
+                                    <path
+                                        d="M114.194 65.2122C120.318 65.2122 125.282 60.2477 125.282 54.1236C125.282 47.9995 120.318 43.035 114.194 43.035C108.07 43.035 103.105 47.9995 103.105 54.1236C103.105 60.2477 108.07 65.2122 114.194 65.2122Z"
+                                        fill="black" />
+                                    <path
+                                        d="M102.247 48.7936C108.371 48.7936 113.336 43.829 113.336 37.7049C113.336 31.5809 108.371 26.6163 102.247 26.6163C96.1232 26.6163 91.1587 31.5809 91.1587 37.7049C91.1587 43.829 96.1232 48.7936 102.247 48.7936Z"
+                                        fill="black" />
+                                    <path
+                                        d="M83.7457 42.1773C89.8698 42.1773 94.8343 37.2127 94.8343 31.0886C94.8343 24.9645 89.8698 20 83.7457 20C77.6216 20 72.6571 24.9645 72.6571 31.0886C72.6571 37.2127 77.6216 42.1773 83.7457 42.1773Z"
+                                        fill="black" />
+                                    <path
+                                        d="M64.3251 42.1773C70.4492 42.1773 75.4138 37.2127 75.4138 31.0886C75.4138 24.9645 70.4492 20 64.3251 20C58.201 20 53.2365 24.9645 53.2365 31.0886C53.2365 37.2127 58.201 42.1773 64.3251 42.1773Z"
+                                        fill="black" />
+                                    <path
+                                        d="M47.1105 47.4459C53.2345 47.4459 58.1992 42.4813 58.1992 36.3573C58.1992 30.2332 53.2345 25.2686 47.1105 25.2686C40.9864 25.2686 36.0219 30.2332 36.0219 36.3573C36.0219 42.4813 40.9864 47.4459 47.1105 47.4459Z"
+                                        fill="black" />
+                                    <path
+                                        d="M92.3839 101.97C89.382 108.525 86.8089 110.792 81.1115 118.45L82.7042 126.292C90.3008 123.535 94.5893 117.408 92.3839 101.97Z"
+                                        fill="black" />
+                                    <path
+                                        d="M97.1011 75.9333C90.9748 75.9333 86.0125 70.971 86.0125 64.8447C86.0125 58.7183 90.9748 53.756 97.1011 53.756H102.982V75.872H97.1011V75.9333Z"
+                                        fill="black" />
+                                    <path
+                                        d="M45.0886 62.149C51.2127 62.149 56.1773 57.1845 56.1773 51.0604C56.1773 44.9363 51.2127 39.9717 45.0886 39.9717C38.9646 39.9717 34 44.9363 34 51.0604C34 57.1845 38.9646 62.149 45.0886 62.149Z"
+                                        fill="black" />
+                                    <path
+                                        d="M63.529 62.7617C69.6531 62.7617 74.6176 57.7972 74.6176 51.673C74.6176 45.5489 69.6531 40.5844 63.529 40.5844C57.4049 40.5844 52.4403 45.5489 52.4403 51.673C52.4403 57.7972 57.4049 62.7617 63.529 62.7617Z"
+                                        fill="black" />
+                                    <path
+                                        d="M81.6015 65.2122C87.7256 65.2122 92.6901 60.2477 92.6901 54.1236C92.6901 47.9995 87.7256 43.035 81.6015 43.035C75.4774 43.035 70.5129 47.9995 70.5129 54.1236C70.5129 60.2477 75.4774 65.2122 81.6015 65.2122Z"
+                                        fill="black" />
+                                    <path
+                                        d="M77.2518 49.2838C83.3759 49.2838 88.3405 44.3193 88.3405 38.1952C88.3405 32.0711 83.3759 27.1066 77.2518 27.1066C71.1278 27.1066 66.1632 32.0711 66.1632 38.1952C66.1632 44.3193 71.1278 49.2838 77.2518 49.2838Z"
+                                        fill="black" />
+                                    <path
+                                        d="M96.4883 57.6768C102.612 57.6768 107.577 52.7123 107.577 46.5882C107.577 40.4641 102.612 35.4995 96.4883 35.4995C90.3642 35.4995 85.3997 40.4641 85.3997 46.5882C85.3997 52.7123 90.3642 57.6768 96.4883 57.6768Z"
+                                        fill="black" />
+                                    <path
+                                        d="M68.8587 100.377C78.8446 100.377 86.3187 91.3103 84.4808 81.5082L80.0699 58.1669H86.3187L94.1604 100.5C96.3046 111.956 87.544 122.493 75.904 122.616C66.4694 122.677 58.2602 115.999 56.4835 106.749L55.2583 100.377H68.8587Z"
+                                        fill="black" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5898_128810">
+                                    <rect width="160" height="160" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <label for="">Name</label>
+
+                        <div class="nameheadline"> Chris Longjohn Silver</div>
+                        <label for="">Informations</label>
+                        <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum.</h3>
+                    </div>
+                    <div class="right-side">
+
+                        <div style="width:650px"><canvas id="interview2"></canvas></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="left-side">
+                        <svg class="bild" width="160" height="160" viewBox="0 0 160 160" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5898_128810)">
+                                <mask id="mask0_5898_128810" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                    x="0" y="0" width="160" height="160">
+                                    <path d="M160 0H0V160H160V0Z" fill="white" />
+                                </mask>
+                                <g mask="url(#mask0_5898_128810)">
+                                    <path
+                                        d="M80 160C124.183 160 160 124.183 160 80C160 35.8172 124.183 0 80 0C35.8172 0 0 35.8172 0 80C0 124.183 35.8172 160 80 160Z"
+                                        fill="#E64415" />
+                                    <path
+                                        d="M91.5871 55.7778C97.7112 55.7778 102.676 50.8132 102.676 44.6891C102.676 38.565 97.7112 33.6005 91.5871 33.6005C85.463 33.6005 80.4985 38.565 80.4985 44.6891C80.4985 50.8132 85.463 55.7778 91.5871 55.7778Z"
+                                        fill="black" />
+                                    <path
+                                        d="M71.003 40.6456C83.3782 40.5844 93.9154 49.59 95.8146 61.7814L98.0201 75.9945H101.88C105.984 75.9332 109.476 78.8739 110.211 82.856L110.518 84.5101C111.437 89.6562 107.577 94.3735 102.37 94.4347H102.186L92.9352 94.496L94.038 100.561C96.1822 112.017 87.4215 122.555 75.7815 122.677C66.347 122.738 58.1377 116.061 56.3611 106.81L47.0491 57.6155L62.3649 40.7069L71.003 40.6456Z"
+                                        fill="#FFBAA6" />
+                                    <path
+                                        d="M76.9456 97.6204L96.3048 92.6581L103.044 128.926C104.33 135.542 98.5715 141.424 91.8938 140.26C87.9117 139.586 84.7873 136.523 83.9909 132.54L76.9456 97.6204Z"
+                                        fill="#FFBAA6" />
+                                    <path
+                                        d="M63.5289 51.3669C69.653 51.3669 74.6175 46.4023 74.6175 40.2782C74.6175 34.1541 69.653 29.1896 63.5289 29.1896C57.4048 29.1896 52.4403 34.1541 52.4403 40.2782C52.4403 46.4023 57.4048 51.3669 63.5289 51.3669Z"
+                                        fill="black" />
+                                    <path
+                                        d="M110.947 56.2678L116.093 84.0813C117.563 92.0455 111.498 99.3971 103.411 99.4584H89.5657L86.5638 73.3603L89.4432 47.4459H100.225C105.494 47.3847 110.028 51.1217 110.947 56.2678Z"
+                                        fill="black" />
+                                    <path
+                                        d="M113.03 84.5101C119.154 84.5101 124.118 79.5456 124.118 73.4215C124.118 67.2974 119.154 62.3328 113.03 62.3328C106.905 62.3328 101.941 67.2974 101.941 73.4215C101.941 79.5456 106.905 84.5101 113.03 84.5101Z"
+                                        fill="black" />
+                                    <path
+                                        d="M114.194 65.2122C120.318 65.2122 125.282 60.2477 125.282 54.1236C125.282 47.9995 120.318 43.035 114.194 43.035C108.07 43.035 103.105 47.9995 103.105 54.1236C103.105 60.2477 108.07 65.2122 114.194 65.2122Z"
+                                        fill="black" />
+                                    <path
+                                        d="M102.247 48.7936C108.371 48.7936 113.336 43.829 113.336 37.7049C113.336 31.5809 108.371 26.6163 102.247 26.6163C96.1232 26.6163 91.1587 31.5809 91.1587 37.7049C91.1587 43.829 96.1232 48.7936 102.247 48.7936Z"
+                                        fill="black" />
+                                    <path
+                                        d="M83.7457 42.1773C89.8698 42.1773 94.8343 37.2127 94.8343 31.0886C94.8343 24.9645 89.8698 20 83.7457 20C77.6216 20 72.6571 24.9645 72.6571 31.0886C72.6571 37.2127 77.6216 42.1773 83.7457 42.1773Z"
+                                        fill="black" />
+                                    <path
+                                        d="M64.3251 42.1773C70.4492 42.1773 75.4138 37.2127 75.4138 31.0886C75.4138 24.9645 70.4492 20 64.3251 20C58.201 20 53.2365 24.9645 53.2365 31.0886C53.2365 37.2127 58.201 42.1773 64.3251 42.1773Z"
+                                        fill="black" />
+                                    <path
+                                        d="M47.1105 47.4459C53.2345 47.4459 58.1992 42.4813 58.1992 36.3573C58.1992 30.2332 53.2345 25.2686 47.1105 25.2686C40.9864 25.2686 36.0219 30.2332 36.0219 36.3573C36.0219 42.4813 40.9864 47.4459 47.1105 47.4459Z"
+                                        fill="black" />
+                                    <path
+                                        d="M92.3839 101.97C89.382 108.525 86.8089 110.792 81.1115 118.45L82.7042 126.292C90.3008 123.535 94.5893 117.408 92.3839 101.97Z"
+                                        fill="black" />
+                                    <path
+                                        d="M97.1011 75.9333C90.9748 75.9333 86.0125 70.971 86.0125 64.8447C86.0125 58.7183 90.9748 53.756 97.1011 53.756H102.982V75.872H97.1011V75.9333Z"
+                                        fill="black" />
+                                    <path
+                                        d="M45.0886 62.149C51.2127 62.149 56.1773 57.1845 56.1773 51.0604C56.1773 44.9363 51.2127 39.9717 45.0886 39.9717C38.9646 39.9717 34 44.9363 34 51.0604C34 57.1845 38.9646 62.149 45.0886 62.149Z"
+                                        fill="black" />
+                                    <path
+                                        d="M63.529 62.7617C69.6531 62.7617 74.6176 57.7972 74.6176 51.673C74.6176 45.5489 69.6531 40.5844 63.529 40.5844C57.4049 40.5844 52.4403 45.5489 52.4403 51.673C52.4403 57.7972 57.4049 62.7617 63.529 62.7617Z"
+                                        fill="black" />
+                                    <path
+                                        d="M81.6015 65.2122C87.7256 65.2122 92.6901 60.2477 92.6901 54.1236C92.6901 47.9995 87.7256 43.035 81.6015 43.035C75.4774 43.035 70.5129 47.9995 70.5129 54.1236C70.5129 60.2477 75.4774 65.2122 81.6015 65.2122Z"
+                                        fill="black" />
+                                    <path
+                                        d="M77.2518 49.2838C83.3759 49.2838 88.3405 44.3193 88.3405 38.1952C88.3405 32.0711 83.3759 27.1066 77.2518 27.1066C71.1278 27.1066 66.1632 32.0711 66.1632 38.1952C66.1632 44.3193 71.1278 49.2838 77.2518 49.2838Z"
+                                        fill="black" />
+                                    <path
+                                        d="M96.4883 57.6768C102.612 57.6768 107.577 52.7123 107.577 46.5882C107.577 40.4641 102.612 35.4995 96.4883 35.4995C90.3642 35.4995 85.3997 40.4641 85.3997 46.5882C85.3997 52.7123 90.3642 57.6768 96.4883 57.6768Z"
+                                        fill="black" />
+                                    <path
+                                        d="M68.8587 100.377C78.8446 100.377 86.3187 91.3103 84.4808 81.5082L80.0699 58.1669H86.3187L94.1604 100.5C96.3046 111.956 87.544 122.493 75.904 122.616C66.4694 122.677 58.2602 115.999 56.4835 106.749L55.2583 100.377H68.8587Z"
+                                        fill="black" />
+                                </g>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5898_128810">
+                                    <rect width="160" height="160" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <label for="">Name</label>
+
+                        <div class="nameheadline"> Chris Longjohn Silver</div>
+                        <label for="">Informations</label>
+                        <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum.</h3>
+                    </div>
+                    <div class="right-side">
+
+                        <div style="width:650px"><canvas id="interview3"></canvas></div>
+                    </div>
+                </div>
+         
+                <div style="width:90%"><canvas id="mediausage"></canvas></div>
             </div>
         </div>
-    </header>
-    <section class="OffsetContainer" style="padding-top:10px">
-        <h1>SPIEGEL Auswertung Mediennutzung</h1>
-        <h4>Nutzung von Medien über den Tagsverlauf</h4>
-        <div style="padding:0 50px ;width: 100%;"><canvas id="interview1"></canvas></div>
-        <div style="padding:0 50px;width: 100%;"><canvas id="interview2"></canvas></div>
-        <div style="padding:0 50px;width: 100%;"><canvas id="interview3"></canvas></div>
-        <div style="padding:0 50px;width: 100%;"><canvas id="mediausage"></canvas></div>
 
-    </section>
+
+
+    </div>
+    <script>
+        function changeContent(index) {
+            var items = document.getElementsByClassName('carousel-item');
+            var buttons = document.getElementsByClassName('carousel-button');
+
+            for (var i = 0; i < items.length; i++) {
+                items[i].classList.remove('active');
+                buttons[i].classList.remove('active');
+            }
+
+            items[index].classList.add('active');
+            buttons[index].classList.add('active');
+        }
+    </script>
+
+
+    <div><canvas id="interview1"></canvas></div>
+    <div style="width:650px"><canvas id="interview2"></canvas></div>
+    <div style="width:650px"><canvas id="interview3"></canvas></div>
+    
+
+
 
     <!-- <script type="module" src="dimensions.js"></script> -->
     <script type="module" src="./acqusitions.js"></script>
