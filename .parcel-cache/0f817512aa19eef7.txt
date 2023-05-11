@@ -10,7 +10,7 @@
 87C:\Users\nikol\lol\sp-interview-auswertung\node_modules\core-js\stable\instance\push.js133282835226353859 0
 65C:\Users\nikol\lol\sp-interview-auswertung\node_modules\path-type133282835199867391 1
 106C:\Users\nikol\lol\sp-interview-auswertung\node_modules\caniuse-lite\data\features\background-clip-text.js133282835206066066 0
-47C:\Users\nikol\lol\sp-interview-auswertung\dist133282837631166345 1
+47C:\Users\nikol\lol\sp-interview-auswertung\dist133282858399671617 1
 77C:\Users\nikol\lol\sp-interview-auswertung\node_modules\ramda\src\endsWith.js133282835211265271 0
 86C:\Users\nikol\lol\sp-interview-auswertung\node_modules\type-fest\ts41\kebab-case.d.ts133282835203106120 0
 73C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@msgpackr-extract133282835235363638 1
@@ -81,12 +81,12 @@
 79C:\Users\nikol\lol\sp-interview-auswertung\node_modules\csso\lib\replace\Url.js133282835207898758 0
 92C:\Users\nikol\lol\sp-interview-auswertung\node_modules\core-js\full\set\is-disjoint-from.js133282835222917799 0
 86C:\Users\nikol\lol\sp-interview-auswertung\node_modules\core-js\features\math\trunc.js133282835231084276 0
-57C:\Users\nikol\lol\sp-interview-auswertung\src\index.html133282837629610721 0
+57C:\Users\nikol\lol\sp-interview-auswertung\src\index.html133282858397891190 0
 113C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\optimizer-svgo\node_modules\svgo\lib\svgo-node.js133282835207112234 0
 89C:\Users\nikol\lol\sp-interview-auswertung\node_modules\css-tree\cjs\syntax\node\Hash.cjs133282835206091336 0
 98C:\Users\nikol\lol\sp-interview-auswertung\node_modules\core-js\stable\string\virtual\trim-left.js133282835230798843 0
 96C:\Users\nikol\lol\sp-interview-auswertung\node_modules\csso\lib\replace\property\font-weight.js133282835207213871 0
-57C:\Users\nikol\lol\sp-interview-auswertung\src\styles.css133282836784983490 0
+57C:\Users\nikol\lol\sp-interview-auswertung\src\styles.css133282857890893328 0
 100C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@jridgewell\resolve-uri\dist\resolve-uri.mjs133282835200783967 0
 111C:\Users\nikol\lol\sp-interview-auswertung\node_modules\css-select\node_modules\domutils\lib\esm\helpers.js.map133282835203809569 0
 100C:\Users\nikol\lol\sp-interview-auswertung\node_modules\csso\node_modules\css-tree\lib\utils\List.js133282835210684034 0
@@ -1271,7 +1271,7 @@
 86C:\Users\nikol\lol\sp-interview-auswertung\node_modules\uuid\dist\esm-browser\index.js133282835199325954 0
 82C:\Users\nikol\lol\sp-interview-auswertung\node_modules\core-js\full\math\log10.js133282835224490103 0
 84C:\Users\nikol\lol\sp-interview-auswertung\node_modules\uuid\dist\esm-browser\nil.js133282835201685501 0
-58C:\Users\nikol\lol\sp-interview-auswertung\dist\index.html133282837631156037 0
+58C:\Users\nikol\lol\sp-interview-auswertung\dist\index.html133282858399661600 0
 86C:\Users\nikol\lol\sp-interview-auswertung\node_modules\uuid\dist\esm-browser\parse.js133282835202153150 0
 72C:\Users\nikol\lol\sp-interview-auswertung\node_modules\msgpackr\LICENSE133282835198433932 0
 86C:\Users\nikol\lol\sp-interview-auswertung\node_modules\core-js\features\math\scale.js133282835227304196 0
@@ -9710,7 +9710,7 @@
 94C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\transformer-babel\package.json133282835203315215 0
 91C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\transformer-babel\README.md133282835203425602 0
 85C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\transformer-babel\src133282835203181499 1
-66C:\Users\nikol\lol\sp-interview-auswertung\dist\index.4d663569.css133282837367490197 0
+66C:\Users\nikol\lol\sp-interview-auswertung\dist\index.4d663569.css133282857891293412 0
 95C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\transformer-babel\src\config.js133282835201298635 0
 98C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\transformer-babel\src\constants.js133282835201675492 0
 93C:\Users\nikol\lol\sp-interview-auswertung\node_modules\@parcel\transformer-babel\src\flow.js133282835202046161 0
@@ -10928,4 +10928,4 @@
 87C:\Users\nikol\lol\sp-interview-auswertung\node_modules\.bin\update-browserslist-db.ps1133282835232440315 0
 65C:\Users\nikol\lol\sp-interview-auswertung\node_modules\.bin\uuid133282835232450316 0
 69C:\Users\nikol\lol\sp-interview-auswertung\node_modules\.bin\uuid.ps1133282835232450316 0
-70C:\Users\nikol\lol\sp-interview-auswertung\dist\index.4d663569.css.map133282837367520230 0
+70C:\Users\nikol\lol\sp-interview-auswertung\dist\index.4d663569.css.map133282857891323441 0
