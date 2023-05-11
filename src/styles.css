@@ -65,9 +65,10 @@ body {
       }
       
       .carousel-button.active {
-        background-color: #e64415;
+        background-color: black;
         border: 1px solid black;
-    
+        color: white;
+         
       }
       
       .carousel-item {
