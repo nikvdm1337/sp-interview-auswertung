@@ -25,12 +25,7 @@ import Chart from 'chart.js/auto'
                     y: { // defining min and max so hiding the dataset does not change scale range
                         min: 0,
                         max: 12,
-                        ticks: {
-                            // Include a dollar sign in the ticks
-                            callback: function (value, index, ticks) {
-                                return 'Intensitaet' + value;
-                            }
-                        },
+                       
                     }
                 },
 
