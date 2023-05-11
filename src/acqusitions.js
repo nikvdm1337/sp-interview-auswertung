@@ -36,7 +36,7 @@ import Chart from 'chart.js/auto'
                     label: 'Intensität der Mediennutzung',
                     data: data1.map(row => row.count),
                     fill: false,
-                    borderColor: 'rgb(75, 192, 192)',
+                    borderColor: '#E64415',
                     tension: 0
                 }]
             }
@@ -124,43 +124,13 @@ import Chart from 'chart.js/auto'
         {
             type: 'bar',
             data: {
-                labels: ['Drizzt Do Urden', 'Mystical Shadow', 'Coree Ann Der'],
+                labels: ['Youtube', 'Twitch', 'RSS Feed', 'Spotify', 'TikTok', 'Instagram'],
                 datasets: [
                     {
-                        label: "Youtube",
-                        data: [9, 2, 1, 1, 5, 2],
-                        borderWidth: 1,
-                        backgroundColor: "#FF0000"
-                    },
-                    {
-                        label: "Twitch",
-                        data: [5, 5, 1, 5, 5, 0],
-                        borderWidth: 1,
-                        backgroundColor: "#6441a5"
-                    },
-                    {
-                        label: "Spotify",
+                        label: '# der interviewten Personen',
                         data: [9, 5, 1, 8, 5, 6],
                         borderWidth: 1,
-                        backgroundColor: "#1DB954"
-                    },
-                    {
-                        label: "RSS Feed",
-                        data: [9, 5, 1, 8, 5, 6],
-                        borderWidth: 1,
-                        backgroundColor: "#ee802f"
-                    }, 
-                    {
-                        label: "TikTok",
-                        data: [9, 5, 1, 8, 5, 6],
-                        borderWidth: 1,
-                        backgroundColor: "#ff0050"
-                    },
-                    {
-                        label: "Instagram",
-                        data: [9, 5, 1, 8, 5, 6],
-                        borderWidth: 1,
-                        backgroundColor: "#FEDA75"
+                        backgroundColor:'#E64415'
                     },
               
             ]
